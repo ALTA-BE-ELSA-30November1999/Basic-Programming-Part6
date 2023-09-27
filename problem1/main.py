@@ -1,5 +1,13 @@
 def compare(a, b):
     pattern = ""
+    if a.count(b) > 0 :
+        start = a.index(b)
+        end = start + len(b)
+        pattern = a[start : end]
+    elif b.count(a) > 0 :
+        start = b.index(a)
+        end = start + len(a)
+        pattern = b[start : end]
     return pattern
 
 if __name__ == '__main__':
