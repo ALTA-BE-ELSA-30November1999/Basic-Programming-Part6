@@ -1,6 +1,15 @@
 def array_unique(arrayA, arrayB):
     # your code here
-    return ''
+    Hasil =[]
+    for i in arrayA :
+        array = arrayA + arrayB
+        if array.count(i) >= 2 :
+            print(end="")
+        else :
+            Hasil.append(i)
+            print(end="")
+        print(end="")
+    return Hasil
 
 if __name__ == '__main__':
     print(array_unique([1, 2, 3, 4], [1, 3, 5, 10, 16])) # [2, 4]
